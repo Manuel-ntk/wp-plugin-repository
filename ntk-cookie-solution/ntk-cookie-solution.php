@@ -254,7 +254,7 @@ function ntk_cookie_solution_block_google_maps() {
  */
 function ntk_cookie_solution_admin_notice() {
     $screen = get_current_screen();
-    if ( $screen->id === 'plugins' ) {
+    if ( $screen && $screen->id === 'plugins' ) {
         ?>
         <div class="notice notice-info">
             <p>
