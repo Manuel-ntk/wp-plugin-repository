@@ -28,9 +28,6 @@ define( 'NTK_COOKIE_SOLUTION_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 function ntk_cookie_solution_activate() {
     // Add default options on activation
     add_option( 'ntk_cookie_solution_active', '1' );
-    
-    // Flush rewrite rules
-    flush_rewrite_rules();
 }
 register_activation_hook( __FILE__, 'ntk_cookie_solution_activate' );
 
@@ -41,9 +38,6 @@ register_activation_hook( __FILE__, 'ntk_cookie_solution_activate' );
 function ntk_cookie_solution_deactivate() {
     // Clean up on deactivation
     delete_option( 'ntk_cookie_solution_active' );
-    
-    // Flush rewrite rules
-    flush_rewrite_rules();
 }
 register_deactivation_hook( __FILE__, 'ntk_cookie_solution_deactivate' );
 
