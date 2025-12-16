@@ -222,7 +222,7 @@ function ntk_cookie_solution_enqueue_scripts() {
     </script>
     <?php
 }
-add_action( 'wp_footer', 'ntk_cookie_solution_enqueue_scripts', 5 );
+add_action( 'wp_footer', 'ntk_cookie_solution_enqueue_scripts', 20 );
 
 /**
  * Block Google Maps scripts until consent
